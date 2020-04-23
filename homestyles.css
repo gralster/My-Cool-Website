@@ -1,0 +1,16 @@
+body {
+ background-image: url('Wiggum.PNG');
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-size: cover;
+}
+img{
+ width: 40%;
+}
+
+h1 {
+
+}
+p {
+  color: powerblue;
+}
