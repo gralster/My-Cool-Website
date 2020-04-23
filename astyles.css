@@ -5,11 +5,11 @@ body {
  background-size: cover;
 }
 img{
- width: 40%;
+ width: 100%;
 }
 
 h1 {
-
+ text-align: center;
 }
 p {
   color: powerblue;

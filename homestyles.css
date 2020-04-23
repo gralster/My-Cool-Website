@@ -1,3 +1,4 @@
+/*Background Image*/
 body {
  background-image: url('Wiggum.PNG');
  background-repeat: no-repeat;
@@ -8,16 +9,56 @@ img{
  width: 40%;
 }
 
+/*Header*/
+h1 {
+ text-align: center;
+}
 
 p {
   color: powerblue;
 }
 
+
+/*image overlay*/
+.container {
+  position: relative;
+  width: 50%;
+}
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+.container:hover .image {
+  opacity: 0.3;
+}
+.container:hover .middle {
+  opacity: 1;
+}
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+/*dropdown*/
 .dropdown {
   position: relative;
   display: inline-block;
 }
-
 .dropdown-content {
   display: none;
   position: absolute;
@@ -27,7 +68,13 @@ p {
   padding: 12px 16px;
   z-index: 1;
 }
-
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+/*Image Centering Function*/
+.centre {
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
 }
