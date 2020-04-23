@@ -12,10 +12,12 @@
 	<img src="myface.jpg" alt="Me">	<br>
 	<a href="alex.htm">Read about Alex here!</a> 
 	<button type="button" onclick= "document.getElementById('show').style.display='block'">Click Me!</button> 
+	<button type="button" onmouseover= printHello() onmouseout= hideHello()>Hover on Me!</button> 
 	<p id="show" style="display:none"> Hello! </p>
 	
 	<script>
-	function printHello(){document.getElementById("show").style.display='block' = "Paragraph changed.";}
+	function printHello(){document.getElementById("show").style.display='block';}
+	function hideHello(){document.getElementById("show").style.display='none';}
 	</script>
 	
 </body>
