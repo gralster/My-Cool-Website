@@ -2,11 +2,12 @@ body {
   background-color: DarkSeaGreen;
   background-size: cover;
 }
+
 h1 {
   color: DarkSlateGray;
 }
 p {
-  color: red;
+  color: DarkSlateGray;
 }
 img{
 	width:12%;
