@@ -7,14 +7,29 @@
 </head>
 
 <body>
-	<h1>About me</h1>
-	<p>I am a cool cat.</p>
-	<img src="myface.jpg" alt="Me">	<br>
-	<a href="alex.htm">Read about Alex here!</a> 
-	<button type="button" onclick= "document.getElementById('show').style.display='block'">Click Me!</button> 
-	<button type="button" onmouseover= printHello() onmouseout= hideHello()>Hover on Me!</button> 
-	<p id="show" style="display:none"> Hello! </p>
-	
+
+	<div id = "topMenu" class="dropdown">
+		<div id = "dropdown-option">
+  			<span>About Us</span>
+		</div>
+ 		<div class="dropdown-content">
+  			<a href="alex.htm">Education</a>  <br>
+			<a href="alex.htm">Skills</a> 	<br>
+			<a href="alex.htm">Interests</a>  	<br>
+		 </div>
+	</div> 	
+
+	<div id=main-box>
+		<div id=main-content>
+		<h1>About me</h1>
+		<p>I am a cool cat.</p>
+		<img src="myface.jpg" alt="Me">	<br>
+		<a href="alex.htm">Read about Alex here!</a> 
+		<button type="button" onclick= "document.getElementById('show').style.display='block'">Click Me!	</button> 
+		<button type="button" onmouseover= printHello() onmouseout= hideHello()>Hover on Me!</button> 
+		<p id="show" style="display:none"> Hello! </p>
+		</div>
+	</div>	
 	<script>
 	function printHello(){document.getElementById("show").style.display='block';}
 	function hideHello(){document.getElementById("show").style.display='none';}
