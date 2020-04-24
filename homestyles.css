@@ -22,10 +22,13 @@ p {
 /*image overlay*/
 .container {
   position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   width: 50%;
 }
 .image {
-  opacity: 1;
+  opacity: 0.9;
   display: block;
   width: 100%;
   height: auto;
@@ -33,7 +36,7 @@ p {
   backface-visibility: hidden;
 }
 .middle {
-  transition: .5s ease;
+  transition: 1s ease;
   opacity: 0;
   position: absolute;
   top: 50%;
@@ -42,10 +45,19 @@ p {
   -ms-transform: translate(-50%, -50%)
 }
 .container:hover .image {
-  opacity: 0.3;
+  opacity: 0.7;
 }
 .container:hover .middle {
   opacity: 1;
+}
+.blur img{
+    -webkit-webkit-transition:all 1s ease;
+    -moz-webkit-transition:all 1s ease;
+    -ms-webkit-transition:all 1s ease;
+    -o-webkit-transition:all 1s ease;
+}
+.blur img:hover{
+ -webkit-filter:blur(4px);
 }
 .text {
   background-color: #4CAF50;
@@ -77,4 +89,16 @@ p {
  display: block;
  margin-left: auto;
  margin-right: auto;
+}
+
+/*footer*/
+footer {
+ font-family: Verdana, Geneva, sans-serif;
+ font-size: 0.7em;
+ font-weight: bold;
+ color: #FFF;
+ padding: 10px;
+ margin: 20px;
+ height: auto;
+ width: 90%;
 }
