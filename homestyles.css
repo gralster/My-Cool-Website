@@ -1,12 +1,21 @@
-/*Background Image*/
-body {
+/*Page Body*/
+html, body {
+ height: 100%;
+ padding: 0px;
+ margin: 0px;
  background-image: url('Wiggum.PNG');
  background-repeat: no-repeat;
  background-attachment: fixed;
  background-size: cover;
 }
+
 img{
  width: 40%;
+}
+
+/*Page Wrapper*/
+.page-wrapper{
+  min-height: 100%;
 }
 
 /*Header*/
@@ -92,13 +101,21 @@ p {
 }
 
 /*footer*/
-footer {
- font-family: Verdana, Geneva, sans-serif;
- font-size: 0.7em;
- font-weight: bold;
- color: #FFF;
- padding: 10px;
- margin: 20px;
- height: auto;
- width: 90%;
+.footer{
+  background: #303036
+  color:#d3d3d3
+  height 400px;
+  position: relative;
+}
+
+.footer .footer-bottom{
+ background: #343a40;
+ color: #686868;
+ height: 50px;
+ width: 100%jj
+ text-align: center;
+ position: fixed;
+ bottom: 0px;
+ left: 0px;
+ padding-top: 20px;
 }
