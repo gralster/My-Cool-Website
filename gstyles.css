@@ -2,7 +2,6 @@ body {
   background-color: DarkSeaGreen;
   background-size: cover;
 }
-
 h1 {
   color: DarkSlateGray;
 }
@@ -14,6 +13,7 @@ img{
 }
 
 #topmenu {
+	position: absolute;
 	width: 70%;	
 	height: 10%;
 	background-color: FloralWhite;
@@ -22,36 +22,36 @@ img{
 	margin-bottom: 2%;
 }
 
-#dropdown-option{
+#menu-option{
 	padding-left: 5%;
-	padding-top: 2.5%;
-	
+	display: inline;
+	position: absolute;
 }
+
 #main-box {
+	position: absolute;
 	height: 100%;
 	width: 70%;	
 	background-color: FloralWhite;
 	margin-left: 5%;
-	
+	margin-top: 10%;
 }
 
 #main-content{
+	position: absolute;
 	padding-left: 5%;
 	padding-top: 2.5%;
 }
 
 .dropdown {
-  position: relative;
-  display: inline-block;
+	position = absolute;
+ 	background-color: FloralWhite;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: FloralWhite;
-  min-width: 160px;
-  padding-left: 5%;
-  padding-top: 2.5%;
+  background-color: inherit;
   z-index: 1;
 }
 
